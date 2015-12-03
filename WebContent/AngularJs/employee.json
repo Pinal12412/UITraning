@@ -1,0 +1,52 @@
+{
+    "allEmployee": [
+        {
+            "emp_name": "Riya Singh",
+            "emp_no": "101",
+            "emp_dept": "Production ",
+            "emp_salary": "$40000.00",
+            "emp_jdate": "12/4/12",
+            "emp_bdate": "01/02/83"
+            },
+        {
+            "emp_name": "Sweta Shah",
+            "emp_no": "91",
+            "emp_dept": "Account",
+            "emp_salary": "$60000.00",
+            "emp_jdate": "11/24/09",
+            "emp_bdate": "11/02/89"
+            },
+        {
+            "emp_name": "Sanika Mirza",
+            "emp_no": "108",
+            "emp_dept": "Sales ",
+            "emp_salary": "$50000.00",
+            "emp_jdate": "12/27/08",
+            "emp_bdate": "10/22/81"
+            },
+            {
+            "emp_name": "Neal PAtel",
+            "emp_no": "87",
+            "emp_dept": "Marketting ",
+            "emp_salary": "$75000.00",
+            "emp_jdate": "01/14/10",
+            "emp_bdate": "03/03/70"
+            },
+        {
+            "emp_name": "Vraj Kapur",
+            "emp_no": "40",
+            "emp_dept": "Shipping ",
+            "emp_salary": "$58000.00",
+            "emp_jdate": "8/26/11",
+            "emp_bdate": "04/22/84"
+            },
+        {
+            "emp_name": "Chandni Kaur",
+            "emp_no": "68",
+            "emp_dept": "HR ",
+            "emp_salary": "$52000.00",
+            "emp_jdate": "09/5/11",
+            "emp_bdate": "10/10/76"
+            }
+    ]
+}

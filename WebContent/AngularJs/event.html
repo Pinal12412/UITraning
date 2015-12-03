@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html data-ng-app="myapp">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+<div data-ng-controller="myctrl">
+<p>{{message}}</p>
+<div>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Like</th>
+<th>Dislike</th>
+<th>Like/Dislike</th>
+</tr>
+</thead>
+<tbody>
+<tr data-ng-repeat="x in data">
+<td>{{x.name}}</td>
+<td>{{x.likes}}</td>
+<td>{{x.dislikes}}</td>
+<td>
+<input type="button" value="Like" data-ng-click ="incrementlikes(x)">
+<input type="button" value="Dislike" data-ng-click ="incrementdislikes(x)">
+</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<script>
+var myapp= angular.module("myapp",[]);
+myapp.controller("myctrl",function($scope){
+	
+		$scope.message="my message";
+		$scope.data= [
+		              {name:"C++", likes:0, dislikes:0},
+		              {name:"SQL", likes:0, dislikes:0},
+		              {name:"JAVA", likes:0, dislikes:0},
+		              {name:"ASP.NET", likes:0, dislikes:0},
+		              {name:"ANGULAR", likes:0, dislikes:0}
+		              ];
+		$scope.incrementlikes = function(x){
+			x.likes++;
+		};
+		$scope.incrementdislikes = function(x){
+			x.dislikes++;
+		}
+});
+
+</script>
+
+</body>
+</html>

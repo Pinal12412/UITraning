@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-ng-app="myapp">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+<div data-ng-controller="myctrl">
+<p>{{val}}</p>
+<button data-ng-click=fun()>Click me!</button>
+<!-- <h2 data-ng-show=IsEven()>even</h2>
+<h2 data-ng-hide=IsEven()>odd</h2> -->
+
+<!-- <h2 data-ng-show=even>even</h2>
+<h2 data-ng-hide=even>odd</h2> -->
+
+<!-- <p data-ng-repeat-start="x in myarray">{{x}}
+<hr data-ng-repeat-end></p> -->
+
+<!-- <p data-ng-repeat= "user in users">{{user.name}}</p>  -->
+
+<!-- <input type="text" data-ng-model="mydata">
+<input type="text" data-ng-model="mydata">{{mydata}} -->
+
+<!-- <input type="text" data-ng-model="mydata.val">
+{{mydata.val}}
+<div data-ng-controller="subcontroller">
+<input type="text" data-ng-model="mydata.val">
+{{mydata.val}}
+</div> -->
+
+<!-- <p>Num:{{num}}</p>
+ <div>Nums:{{nums}}</div>
+<button data-ng-click="increment()">Increment</button>
+  -->
+ 
+<!--  filleters -->
+ <input type="text" data-ng-model="mydata.str">
+  {{mydata.str | uppercase}} 
+  
+
+</div>
+
+
+
+
+<script>
+var myapp=angular.module("myapp",[]);
+myapp.controller('myctrl',function($scope){
+//	$scope.name="pinal"
+$scope.val = 1;
+$scope.even = false;
+$scope.fun = function(){
+	$scope.val +=1;
+	$scope.even=$scope.val%2==0;
+}
+$scope.IsEven=function(){
+//	 return $scope.val%2==0;
+}
+$scope.myarray=[1,2,3,4,5,6,7,8,9,10]
+$scope.users=[{name:"mike",age:24},{name:"sonu",age:25},{name:"riya",age:28},{name:"sneha",age:29}]
+
+/* $scope.num=0;
+$scope.nums=[];
+  $scope.increment= function(){
+	$scope.num++;
+} 
+ $scope.$watch("num",function(){
+	$scope.nums.push($scope.num)
+})   */
+
+
+
+
+});
+/* myapp.controller("subcontroller",function(){
+}); */
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-ng-app="todo">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+<div data-ng-controller="todoctrl">
+<form name="frm" data-ng-submit="addTodo()">
+<input type="text" name="newtodo" data-ng-model="newTodo" required/>
+<button data-ng-disabled="frm.$invalid">Go</button>
+</form>
+<button data-ng-click=clear()>clear</button>
+
+
+<p data-ng-repeat="x in todos"> {{x.title}} </p>
+{{nm}}
+</div>
+
+
+<script>
+var todo= angular.module("todo",[]);
+todo.controller= ("todoctrl", function($scope){
+	$scope.todos = [
+	               {"title":"New ToDo List", "done":false}
+	               ]
+	$scope.nm="riya"
+	
+	$scope.addTodo= function(){
+		
+	}
+	$scope.clear = function(){
+		
+	}
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html data-ng-app="myapp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+<div data-ng-controller="myctrl">
+<!-- 
+<div data-ng-repeat="x in edata">
+console.log(x);
+ <p>{{x.emp_name}}</p>
+</div>
+<p>{{name}}</p>
+<div data-ng-repeat="x in cust">
+<p> {{x.Name}}</p>
+</div> -->
+</div>
+ 
+
+<script>
+var myapp=angular.module("myapp",[]);
+myapp.controller("myctrl",function($scope, $http){
+	console.log();
+	 $http.get("AngularJs/employee.json")
+	.success(function(response) {
+		console.log(response.allEmployee);
+	//	$scope.edata = response.allEmployee;
+	}); 
+	/* $http.get("http://www.w3schools.com/angular/customers.php")
+	.success(function (response){$scope.cust = response.records;}); */
+
+});
+
+</script>
+</body>
+</html>

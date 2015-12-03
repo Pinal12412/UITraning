@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html  data-ng-app="myApp">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body >
+<div data-ng-controller="mycontroller" data-ng-init="">
+
+<p data-ng-repeat="v in info | orderBy:'age'"> My First Angular Expression is:{{v.name}}</p>
+
+<!-- <input type="checkbox" data-ng-model="nb"> -->
+<!--  <p data-ng-hide="nb">Priya Singh</p> -->
+</div>
+
+<script>
+var myApp=angular.module("myApp",[]);
+myApp.controller("mycontroller",function($scope){
+	$scope.nb="its me";
+	$scope.info=[{
+			name:"riya",
+			lastname:"singh",
+	        company:"pro-tek",
+	        age:20
+	},
+	{
+		name:"kajal",
+		lastname:"lohiya",
+        company:"pro-tek",
+        age:16
+},
+{
+	name:"pinal",
+	lastname:"patel",
+    company:"pro-tek",
+    age:23
+},
+{
+    name:"Kuldeep",
+    lastname:"singh",
+    company:"pro-tek",
+    age:21
+    }
+];
+});
+
+</script>
+</body>
+</html>

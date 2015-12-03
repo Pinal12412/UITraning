@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="Javascript/domform.js"> </script>
+<style>
+.box {
+   color:red;
+   font-size:120%;}
+#mydiv {
+        height:150px;
+        width:150px;
+        border:4px solid green;
+        }
+#maindiv {
+       height:502px;
+       width:710px;
+       border:0px solid black;
+       }
+#fromdiv {
+       height:500px;
+       width:350px;
+       border:1px solid black;
+       float:left;
+       }
+#viewdiv {
+       height:500px;
+       width:350px;
+       border:1px solid black;
+       float:right;
+       }
+#edit {
+       margin-top:150px;
+       margin-left:150px;
+       }
+</style>
+<!-- <input type="button" ondblclick="show()" value="show"> -->
+
+</head>
+<body>
+<!-- <form name="myform" id="fm1" method="post">
+FirstName:
+<input id="fname" type="text" name="firstname">
+<br></br>
+LastName:
+<input id="lname" type="text" name="lastname">
+<br></br>
+Gender:<br>
+<input class="rbtn" type="radio" name="sex">Male<br>
+<input class="rbtn" type="radio" name="sex">Female<br>
+<br>
+State:
+<select id = "sbt">
+<option>None</option>
+<option>NY</option>
+<option>NJ</option>
+<option>CT</option>
+<option>PA</option>
+<option>MD</option>
+<option>MN</option>
+<option>GA</option>
+
+</select>
+<br><br>
+<input id="cbox" type="checkbox">I ACCEPT
+<br><br>
+<input type="button" value="Click Me" onclick="change()">
+<input type="button" value= "click me!" onclick="check()">
+<input type="button" value="Click Me!" onclick="state()">
+<input type="button" value="Click Me!" onclick="checkbx()">
+
+</form>  -->
+<!-- *****************dom & events ********************** -->
+<!--** que1 -->
+<!-- Enter temprature in fehrenheit to convert in to celsius:-  -->
+<!-- <!--  <input id="temp" type="text" onKeyUp=temprature()>  --> 
+<!-- <input id="temp"> -->
+<!-- <div> -->
+<!--  <button onClick="temprature()">click</button>   -->
+<!-- <div> -->
+<!-- Que2, 3 & 4 -->
+<!-- <div id = "mydiv"> -->
+<!-- <p> hello world</p> -->
+<!-- <p> It's DOM Examples</p> -->
+<!-- <p> Page Load Events </p> -->
+<!-- <img src="iMAGES/Advantage_layout/images/vehicles/car1.jpg"> -->
+<!-- <img src="iMAGES/Advantage_layout/images/vehicles/car2.jpg"><br> -->
+<!-- <input type="button" onclick="hide()" value="hide">  -->
+
+<!-- </div> -->
+
+<!-- Que5 -->
+<!-- <div> -->
+<!-- <button id="ulist" onmouseover= "onmsover()" onmouseout="onmsout()"> -->
+<!-- <ul > -->
+<!-- <li>Toyota</li> -->
+<!-- <li>BMW</li> -->
+<!-- <li>Honda</li> -->
+<!-- <li>volvo</li> -->
+<!-- </ul> -->
+<!-- </button> -->
+<!-- </div> -->
+
+<!-- Que 6
+<form>
+<p id="app">Please fill out an application to get a credit card</p>
+firstName:
+<input id="fname" type="text"> <br></br>
+LastName:
+<input id="lname" type="text"><br></br>
+Birthdate:
+<input id="main_one" type="date"><br></br>
+Address:<br>
+Street:
+<input id="main_two" type="text"><br></br>
+City:
+<input id="city" type="text"><br></br>
+Social Security No:
+<input id="main_three" type="number" size="10"><br></br>
+credit card:
+<select id="box"> 
+<option>Master Card</option>
+<option>Visa Card</option>
+<option>American Express</option>
+</select>
+</form>
+ -->
+<!-- que 7 & 8-->
+<!-- <div>
+<p>When you click button "Select All", all checkboxes will be unchecked</p>
+<input class = "box" type="checkbox" checked>18 Years or older<br>
+<input class = "box" type="checkbox">Have a Laptop<br>
+<input class = "box" type="checkbox" >have a car<br>
+<input class = "box" type="checkbox" checked>Working<br>
+<input class = "box" type="checkbox">Full Time<br>
+<input class = "box" type="checkbox" checked>Part Time<br>
+<input class = "box" type="checkbox">Have a Credit card<br>
+<input class = "box" type="checkbox" checked>Have a House<br>
+<input class = "box" type="checkbox">Bank Account<br>
+<input class = "box" type="checkbox" checked>Study Loan<br></br>
+<button onclick="checkbx()">Select All</button>
+<button onclick="valid()">Validate</button>
+</div> -->
+<!-- que 9
+<div>
+<ul>
+<li><a class="link1" href="http://www.google.com">google</a><br></li>
+<li><a class="link1" href="http://www.pizzahut.com">Pizza Hut</a><br></li>
+<li><a class="link1" href="http://www.macys.com">Macy's Online</a><br></li>
+<li><a class="link1" href="http://www.online.citibank.com">Online Citibank</a><br></li>
+<li><a class="link1" href="http://www.sesameplace.com">Sesame Place</a><br><br><br><br></li>
+</ul>
+
+<button id="add" onclick = "addlink()">Add Link</button><br>
+<button onclick = "checkurl()">Check URL</button><br>
+</div> -->
+          
+<div id="maindiv">
+<div id="fromdiv">
+<form>
+firstName:
+<input id="fname" type="text"> <br></br>
+LastName:
+<input id="lname" type="text"><br></br>
+Gender:<br>
+<input class="rbtn" type="radio" name="sex">Male<br>
+<input class="rbtn" type="radio" name="sex">Female<br>
+<br>
+State:
+<select id = "sbt">
+<option>None</option>
+<option>NY</option>
+<option>NJ</option>
+<option>CT</option>
+<option>PA</option>
+<option>MD</option>
+<option>MN</option>
+<option>GA</option>
+</select><br><br>
+<button id= "save" onclick="input()">Save</button><br>
+</form>
+</div>
+
+<div id="viewdiv">
+  <p id="txt1"></p>
+  <p id="txt2"></p>
+  <p id="input3"></p>
+  <p id="input4"></p>
+ <button id="edit" value="Edit">Edit</button>
+</div> 
+</div>
+</body>
+</html>

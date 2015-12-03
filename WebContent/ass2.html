@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.bx1 {
+	height: 200px;
+	width: 250px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	margin: 25px;
+	background-color: black;
+	padding: 10px;
+	color: white;
+	float:left;
+}
+
+.innerbox {
+	height: 120px;
+	width: 200px;
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 25px;
+	color: black;
+	padding: 20px;
+}
+
+#f1 {
+	width: 120px; //
+	border: 2px solid green;
+	overflow: hidden; //
+	display: inline;
+	float: left;
+}
+
+#f2 {
+	margin-left: 10px; //
+	border: 2px solid red;
+	height: 70px;
+	width: 40px; //
+	display: inline;
+	float: left;
+	}
+.b1{
+   height:20px;
+   width:35px;
+   float:left;
+   display:inline;
+   margin:8px;
+   }
+ .b2{
+     height:20px;
+     width:5px;
+     float:left;
+     display:inline;
+     }
+  #bottom{
+       height:50px;
+       width:500px;
+       margin-left:250px;
+       margin-right:250px;
+       }
+  #img1{
+        height:20px;
+        wight:40px;
+        float:left;
+         }
+  </style>
+
+</head>
+<body>
+	<div style="height: 800px; width: 1200px; background-color: blue; display: block; border: 1px solid blue">
+		<div
+			style="height: 650px; width: 1100px; border: 5px solid white; border-radius: 10px; margin: 50px">
+			
+			<div
+				style="height: 500px; width: 1000px; border: 1px solid grey; border-radius: 5px; margin-left: 50px; margin-right: 50px">
+				<div style="color:red; display:center;margin-left:250px; margin-right:250px"> 
+				<h1>Start Your Auto Quote</h1>
+				</div>
+				<p>It's quick and easy!</p>
+				<div class="bx1">
+					What Is Your Name?
+					<div class="innerbox">
+						<div id="f1" style="">
+							<div id="fname">FirstName</div>
+							<div id="fnametxt">
+								<input type=text size=12 id="fnametxt">
+							</div>
+
+							<div id="lname">LastName</div>
+							<div id="lnametxt">
+								<input type=text size=12 id="lnametxt">
+							</div>
+						</div>
+						<div id="f2">
+							<div>MI</div>
+							<div>
+								<input type="text" size=5>
+							</div>
+							<div>Suffix</div>
+							<div>
+								<select>
+									<option>none</option>
+									<option>none1</option>
+
+									<option>none2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="bx1">
+						When Were You Born?
+						<div class="innerbox">
+						<div style= "padding:15px">
+						<div class="b1">
+						<select>
+						<option>5</option>
+						</select>
+						</div>
+						<div class="b2">/</div>
+						<div class="b1">
+						<select>
+						<option>11</option>
+						</select>
+						</div>
+						<div class="b2">/</div>
+						<div class="b1">
+						<select>
+						<option>1988</option>
+						</select>
+						</div>
+						</div>
+						
+						
+						</div>
+					</div>
+					<div class="bx1">
+						What Is Your Address?
+						<div class="innerbox">
+						<div style="display:inline">
+						<div id="address">Address</div>
+						<div id="addresstext"><input type="text" size="10" value="8000 S Sepulveda Blvd"></div>
+						</div>
+						
+						<div style="display:inline;float:left">
+						<div id="apt"> Apt/Unit#</div>
+						<div id="apttext"><input type="text" size="5"></div>
+						<div style="float:left">
+						<div id="city">City</div>
+						<div id="citytext"><input type="text" size="7" value="Los Angeles"></div>
+						</div>
+						</div>
+						<div style="float:left">
+						<div id="state">State</div>
+						<div id="statetext"><select><option>CA</option></select></div>
+						</div>
+						<div style="float:right">
+						<div id="zip">Zip Code</div>
+						<div id="ziptext"><input type="text" size="5" value="90045"></div>
+						
+						</div>
+						
+						
+						
+						
+						</div>
+					</div>
+					<div id="bottom"> 
+					<img src="iMAGES/quote_benefits.jpg"></div>
+					
+							</div>
+							<div id="img1">
+						<img src="iMAGES/als_logo_trust_large.png">
+						</div>
+						<div> 
+						<img src="iMAGES/btn_continue_over.png"></div>
+		</div>
+		
+		</div>
+		</body>
+</html>

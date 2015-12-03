@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- <style>
+input.ng-invalid{
+border:1px solid red;
+}
+</style> -->
+
+</head>
+<body>
+
+<div data-ng-controller="mycontroller">
+<form name="frm">
+<label>Firstname:</label>
+<input type="text" name="fname" data-ng-model="fname" placeholder="enter your firstname" required>
+<span data-ng-show=" frm.fname.$dirty && frm.fname.$fname.$invalid">Required!</span><br>
+<span data-ng-show="frm.fname.$error.required"></span>
+<label>Lastname:</label>
+<input type="text" name="lname" data-ng-model="lname" placeholder="enter your lastname" required>
+<span data-ng-show="frm.lname.$dirty && frm.lname.$error.required">Required!</span><br><br>
+<label>Email:</label>
+<input type="email" name="email" data-ng-model="email" placeholder="enter your Email" required>
+<span data-ng-show="frm.email.$invalid"> </span>
+<span  data-ng-show="frm.email.$error.email">Not an email!</span><br>
+
+<label>Phone No:</label>
+<input type="number" name="phone" data-ng-model="phone" placeholder="enter a valid no." data-ng-maxlength="10">
+<span data-ng-show="frm.phone.$error.maxlength">Too Long</span><br>
+<label>Gander:</label><br>
+<label>Male</label><input type="radio" name="gander" data-ng-selected="true" required><br>
+<label>Female</label><input type="radio" name="gander" data-ng-selected="true"><br>
+<label>Country</label>
+<select required>
+<option></option>
+<option>India</option>
+<option>USA</option>
+<option>Australia</option>
+<option>UK</option>
+</select>
+
+
+<button value="submit" data-ng-disabled="frm.$invalid">submit</button>
+<p>
+  <input type="submit" 
+  data-ng-disabled="frm.fname.$dirty && frm.fname.$invalid ||
+  frm.lname.$dirty && frm.lname.$invalid">
+</p>
+ 
+
+</form>
+</div>
+
+<script>
+var myApp=angular.module("myApp",[]);
+myApp.controller("mycontroller",function($scope){
+		$scope.fname="",
+		$scope.lname="",
+		$scope.email="",
+		$scope.phone=""
+		});
+	
+
+</script>
+</body>
+</html>

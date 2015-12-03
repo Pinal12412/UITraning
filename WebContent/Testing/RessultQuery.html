@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<script>
+var urlStr= window.location;
+alert(urlStr);
+var part1=urlStr.toString().split("?");
+alert(part1[1]);
+var str1=part1[1].toString().split("&");
+alert(str1);
+
+var firstValue= str1[0].split("=");
+var  lastValue=str1[1].split("=");
+alert("Your First Name is " + firstValue[1]);
+alert("Your Last Name is " + lastValue[1]);
+
+
+
+function checkQuery(val){
+	
+
+	
+	
+}
+
+function test(){
+	  var listString = document.getElementById("hiddenfield1").value;
+	  var listArray = listString.split('~');
+	  
+	  // now you have an array in Javascript of each value
+	  
+	  for( var i = 0; i <listArray.length; i++){
+		  alert(listArray[i]);
+	  }
+}
+</script>
+</body>
+</html>

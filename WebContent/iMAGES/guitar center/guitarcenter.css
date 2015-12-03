@@ -1,0 +1,232 @@
+<style>
+#maindiv {
+           height:800px;
+           width:900px;
+           border:2px solid black;
+           
+           }
+#inndiv{
+       height:790px;
+       width:890px;
+       background-color:#cd8282;
+       }
+#navi {
+       height:50px;
+       width:850px;
+       border:1px solid black;
+       margin:24px;
+       }
+ul{
+ 
+  list-style-type:none;
+  
+  }
+li {
+    color:black;
+    align:center;
+     display:inline;
+     margin-right:10px;
+     font-weight:bold;
+     font-size:25px;
+    }
+#pic {
+    height:150px;
+    width:450px;
+    border:1px solid black;
+    margin:5px 218px 15px 218px; 
+    }    
+#img1 {
+	height:150px;
+	width:450px;
+}
+#action{
+    height:40px;
+    width:890px;
+    margin-top:10px;
+    }
+#btn1 {
+height:40px;
+width:100px;
+font-weight:bold;
+font-size:20px;
+color:white;
+margin-left:190px;
+margin-right:150px;
+background-color:maroon;
+}
+#btn2 {
+height:40px;
+width:100px;
+font-weight:bold;
+font-size:20px;
+color:white;
+margin-left:190px;
+margin-right:150px;
+background-color:maroon;
+}
+#info {
+   height:400px;
+   width:400px;
+
+   margin:auto;
+   }
+  
+#detail1 {
+    height:113px;
+    width:398px;
+    border:1px solid maroon;
+      
+    }
+#detail2 {
+    height:83px;
+    width:398px;
+    border:1px solid maroon;
+    }
+#detail3 {
+    height:143px;
+    width:398px;
+    border:1px solid maroon;
+    }
+#buy {
+   height:40px;
+   width:100px;
+   font-weight:bold;
+   font-size:20px;
+   color:white;
+   background-color:maroon;
+   margin:0px 190px 5px 655px;
+   }
+   
+ #main2 {
+	height: 800px;
+	width: 900px;
+	border: 1px solid maroon;
+	background-color: #cd8282;
+}
+
+#inndiv2 {
+	height: 756px;
+	width: 800px;
+	margin-left: 46px;
+	margin-top: 20px;
+	}
+
+#navi2 {
+	height: 80px;
+	width: 798px;
+	border: 1px solid maroon;
+}
+
+#imginfo2 {
+	height: 155px;
+	width: 800px;
+	margin-top:20px;
+}
+#pic1 {
+	height: 153px;
+	width: 450px;
+}
+
+#img2 {
+	height: 153px;
+	width: 450px;
+	border: 1px solid maroon;
+	float:left;
+}
+
+#info2 {
+	height:153px;
+	width:300px;
+	border: 1px solid maroon;
+	display:inline;
+	float:right;
+	}
+#pform {
+     height:230px;
+     width:500px;
+     border:1px solid maroon;
+     margin:20px 148px 10px 148px;
+     font-size:22px;
+   }
+ #rev {
+       height:40px;
+width:170px;
+font-weight:bold;
+font-size:20px;
+margin-left:550px;
+background-color:#a64d4d;
+border:1px solid maroon;
+}
+#verify {
+    height:170px;
+    width:600px;
+    border:1px dashed maroon;
+    margin:10px 98px;
+     }
+ #innverify {
+         height:150px;
+         width:580px;
+         margin:10px;
+         font-size:20px;
+         }
+#buy {
+     height:30px;
+width:70px;
+font-weight:bold;
+font-size:20px;
+margin-left:500px;
+background-color:#a64d4d;
+border:1px solid maroon;
+}
+
+
+#main3 {
+	height: 800px;
+	width: 900px;
+	border: 1px solid maroon;
+	background-color: #cd8282;
+}
+#inndiv3 {
+	height: 756px;
+	width: 800px;
+	margin-left: 46px;
+	margin-top: 20px;
+	border:1px dotted maroon;
+	}
+#img3 {
+	height: 153px;
+	width: 450px;
+	border: 1px solid maroon;
+	margin:10px 174px;
+}
+#pic3 {
+	height: 153px;
+	width: 450px;
+}
+#txt {
+    height:70px;
+    width:450px;
+    margin:30px 174px;
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+    }
+#conf {
+    height:300px;
+    width:450px;
+    margin-left:174px;
+    border:1px solid maroon;
+    }    
+#btn3 {
+  height:40px;
+width:170px;
+font-weight:bold;
+font-size:20px;
+margin-top:30px;
+margin-left:550px;
+background-color:#a64d4d;
+border:1px solid maroon;
+}  
+   
+   
+   </style>

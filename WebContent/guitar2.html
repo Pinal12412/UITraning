@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+<link rel="stylesheet" href="iMAGES/guitar center/guitarcenter.css" type="text.css">
+<script src="iMAGES/guitar center/guitarcenter2.js"></script>
+<script src="Javascript/JQUERYCDN/jquery-2.1.4.min.js"></script>
+</head>
+<body onload="getdata()">
+	<div id="main2">
+		<div id="inndiv2">
+			<div id="navi2"></div>
+ 			<div id="imginfo2"> 
+				<div id="img2">
+				<img id="pic1" src="">
+				</div>
+ 				<div id="info2"></div> 
+ 			</div> 
+ 			<form id="pform" action="">
+ 			
+ 			<div style="margin:2px 10px">
+ 			FirstName:
+ 			<input type="text" id="fnm" size="40px" style= height:15px placeholder="Enter your First Name"><br>
+ 			LastName:
+ 			<input type="text" id="lnm" size="40px" style=height:15px placeholder="Enter your Last Name"><br>
+ 			CreditCardType:
+ 			<select style="height:23px; width:100px">
+ 			<option>Visa</option>
+ 			<option>Master</option>
+ 			<option>AMX</option>
+ 			</select><br>
+ 			CreditCard No:
+ 			<input type="number" id="cno" style="height:15px; width:200px"><br>
+ 			Security No:
+ 			<input type="number"><br>
+ 			Shipping Address:
+ 			<input type="text" id="add" size="40px"><br>
+ 			City:
+ 			<input type="text">
+ 			Zip Code:<input type="number"><br>
+ 			Email:
+ 			<input type="text" id="email">
+ 			</div>
+ 			
+ 			</form>
+ 			<button id="rev" onclick="formvalidation()">Review Order</button>
+ 			<div id="verify">
+ 			<div id="innverify">
+ 			FirstName:
+ 			<input id="cfnm">
+ 			<br>
+ 			LastName:<input id="clnm"><br>
+ 			Shipping Address:<br>
+ 			Credit Card Ending With:<input id="ccno"><br>
+ 			Email:<input id="cemail">
+ 			
+ 			<button id="buy" onclick="buyguitar()">Buy</button></div>
+ 			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
