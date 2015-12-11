@@ -16,7 +16,9 @@ th, td {
 </head>
 <body>
 <div data-ng-controller="filterctrl">
-Rows To Display:<input type="number", step="1", data-ng-model="rowlimit", min="0", max="5"> 
+<input type="checkbox" data-ng-model="hidesalary">Hide Salary
+Search: <input type="text" placeholder="search by name" data-ng-model="serchText.name">
+<!-- Rows To Display:<input type="number", step="1", data-ng-model="rowlimit", min="0", max="5">  -->
 Order By:<select data-ng-model="sortorder">
 <option value="name">Name</option>
 <option value="gender">Gender</option>
@@ -31,17 +33,21 @@ Order By:<select data-ng-model="sortorder">
 <th>Date Of Birth</th>
 <th>Gender</th>
 <th>Salary</th>
-<th>Salary</th>
+<th data-ng-hide="hidesalary">Salary</th>
+<th data-ng-show="hidesalary">Salary</th>
 </tr>
 </thead>
 <!-- <tbody data-ng-repeat="employee in employees | limitTo:rowlimit"> -->
-<tbody data-ng-repeat="employee in employees  | orderBy:sortorder ">
+<!-- <tbody data-ng-repeat="employee in employees  | orderBy:sortorder "> -->
+<!--  <tbody data-ng-repeat="employee in employees  | filter: searchText"> -->
+ <tbody data-ng-repeat="employee in employees">
 <tr>
 <td>{{employee.name | uppercase}}</td>
 <td>{{employee.birthdate | date:"dd/MM/yyyy"}}</td>
 <td>{{employee.gender | lowercase}}</td>
 <td>{{employee.salary | number}}</td>
-<td>{{employee.salary | currency}}</td>
+<td data-ng-hide="hidesalary">{{employee.salary | currency}}</td>
+<td data-ng-show="hidesalary">####</td>
 </tr>
 </tbody>
 </table>
@@ -58,6 +64,7 @@ filter.controller('filterctrl', function($scope){
 	                  {name:"Ashish", birthdate:new Date("July 15, 1982"),gender:"male",salary:60000.34,salary:60000.34}
 	                  ];
 	 $scope.sortorder="name";
+	
 	
 });
  
